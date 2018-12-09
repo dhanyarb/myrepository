@@ -1,0 +1,9 @@
+---
+- hosts: 172.31.21.86
+  remote_user: ansible1
+  become: yes
+  tasks:
+  - name: craete user
+    user:
+      name: test200
+      state: present
